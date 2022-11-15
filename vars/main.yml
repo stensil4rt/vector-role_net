@@ -1,4 +1,4 @@
 ---
-vector_datadir: "/var/lib/vector"
-vector_config: "/etc/vector/vector.toml"
-...
+# vars file for vector-role
+vector_supported: true
+vector_install_type: 'deb'
