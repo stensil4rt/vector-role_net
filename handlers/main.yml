@@ -1,8 +1,2 @@
 ---
-- name: Start vector service
-  become: true
-  ansible.builtin.service:
-    name: "vector"
-    enabled: true
-    state: restarted
-...
+# handlers file for vector-role
