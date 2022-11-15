@@ -1,8 +1,3 @@
 ---
 vector_version: "0.25.1"
-vector_test_dir: "/home/ansible/test"
-clickhouse_host: "127.0.0.1"
-clickhouse_port: "8123"
-clickhouse_user: "admin"
-clickhouse_password: ""
-...
+vector_supported: false
