@@ -2,7 +2,7 @@
 # tasks file for vector
 - name: Install epel-release
   become: true
-  ansible.builtin.yum:
+  ansible.builtin.apt:
     name: epel-release
     state: present
 - name: NGINX -> Install Nginx
