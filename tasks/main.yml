@@ -1,13 +1,9 @@
 ---
 # tasks file for vector
-- name: Install epel-release
-  become: true
-  ansible.builtin.apt:
-    name: epel-release
-    state: present
+#DEB
 - name: NGINX -> Install Nginx
   become: true
-  ansible.builtin.yum:
+  ansible.builtin.apt:
     name: nginx
     state: present
   notify: Start nginx
@@ -24,7 +20,7 @@
     url: "https://packages.timber.io/vector/{{ vector_version }}/vector_{{ vector_version }}-1_amd64.deb"
     dest: "./vector_{{ vector_version }}-1_amd64.deb"
   notify: Download deb-distrib
-- name: Vector | Install deb-packages
+- name: Vector -> Install deb-packages
   become: true
   ansible.builtin.apt:
     deb: "vector-{{ vector_version }}-1_amd64.deb"
