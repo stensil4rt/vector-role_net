@@ -2,3 +2,6 @@
 # vars file for vector-role
 vector_supported: true
 vector_install_type: 'deb'
+vector_packages:
+  - vector-server
+vector_dir: "/opt/vector"
